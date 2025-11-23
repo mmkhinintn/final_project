@@ -30,9 +30,12 @@ The solution is fully containerized using Docker.
 
 ### 1. Clone the Project
 
+---
+
 git clone https://github.com/yourusername/telecom-churn-pipeline.git
 cd telecom-churn-pipeline
 
+---
 
 ### 2. Configure Credentials
 
@@ -42,9 +45,13 @@ Create a `.env` file in the root directory and add your Kaggle credentials:
 ### 2. Configure Credentials
 
 Create a `.env` file in the root directory and add your Kaggle credentials:
+
+---
 
 KAGGLE_USERNAME=your_username
 KAGGLE_KEY=your_secret_key
+
+---
 
 *Never commit your `.env` file!*
 
@@ -52,8 +59,9 @@ KAGGLE_KEY=your_secret_key
 
 ### 3. Build & Launch the Stack
 
-docker-compose up --build
+---
 
+docker-compose up --build
 
 ---
 
@@ -62,7 +70,9 @@ docker-compose up --build
 In a new terminal:
 
 ---
+
 docker-compose exec airflow-webserver airflow db init
+
 docker-compose exec airflow-webserver airflow users create
 --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin
 
