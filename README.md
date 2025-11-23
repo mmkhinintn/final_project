@@ -44,11 +44,13 @@ Create a `.env` file in the project root and add your Kaggle credentials (do not
 
 ```
 cp .env.example .env
+
 ```
 
 Then edit `.env` and add your personal Kaggle credentials and other secrets.
 
 *Do not commit your real `.env` file or secret keys!*
+
 
 
 3) Build & launch the stack
