@@ -79,16 +79,14 @@ docker-compose exec airflow-webserver airflow users create \
 ![etl_churn](images/etl_churn.PNG)
 
 
-6) Verify results
-
-- you can the data via 
-![churn_customers](images/churn_customers.PNG)
 
 
-7) Metabase (reporting)
+6) Metabase (reporting)
 
 - Open Metabase at `http://localhost:3000` and configure your admin account on first run
 - Connect Metabase to the `analytics` schema to view dashboards
+- you can finally see the data via 
+![churn_customers](images/churn_customers.PNG)
 
 ## 📊 Example Dashboards
 
