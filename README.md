@@ -81,8 +81,9 @@ docker-compose exec airflow-webserver airflow users create \
 
 6) Verify results
 
-- Raw data should be available in `staging.customer_churn`
-- Processed data should be available in `analytics.customer_churn`
+- you can the data via 
+![churn_customers](images/churn_customers.PNG)
+
 
 7) Metabase (reporting)
 
