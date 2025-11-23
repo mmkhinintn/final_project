@@ -111,13 +111,14 @@ final_project/ (project root)
 
 ## Notes
 
-- The stack runs in Docker for portability and easy testing.
-- Airflow manages and schedules pipeline tasks with restartability and monitoring.
-- Data is anonymized before being stored in the `analytics` schema.
-
-If you add images for the README, place them in the `images/` folder or update the paths accordingly.
+- All services are up in Docker for easy, portable testing.
+- Airflow manages and schedules all steps, with full restartability and monitoring.
+- Data is anonymized and preprocessed for business reporting.
+- Metabase dashboards are ready to use and can be edited/forked as needed.
 
 ---
+
+**Ready to use for any Telecom churn analysis!**
 
 Ready to use for Telecom churn analysis!
 
