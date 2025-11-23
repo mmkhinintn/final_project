@@ -9,6 +9,7 @@ This project implements an automated ELT (Extract, Load, Transform) pipeline for
 - Anonymizes PII and transforms the data
 - Stores cleaned data in an `analytics` schema for reporting
 
+
 ## Architecture
 
 The solution is containerized with Docker and uses:
@@ -18,6 +19,11 @@ The solution is containerized with Docker and uses:
 - **Database:** PostgreSQL (`staging` and `analytics` schemas)
 - **Transformation:** Pandas & SQLAlchemy
 - **Reporting:** Metabase connected to the `analytics` schema
+
+## Architecture Diagram
+
+![Pipeline Architecture](images/architecture.PNG)
+
 
 ## Prerequisites
 
@@ -99,7 +105,8 @@ docker-compose exec airflow-webserver airflow users create \
 final_project/ (project root)
 ├── dags/
 │   ├── etl_churn.py       # Airflow DAG
-│   └── transformers.py    # Transformation helpers
+│   └── transformers.py    # Transformation helpers     # Airflow DAG
+│   └── tests/test_transformers.py     # test transformers.py
 ├── data/                  # Raw and processed CSVs
 ├── sql/                   # SQL scripts
 ├── images/                # Dashboard screenshots
@@ -108,6 +115,19 @@ final_project/ (project root)
 ├── README.md
 ├── requirements.txt
 ```
+
+## Data Privacy & PII Handling
+
+All personally identifiable information (PII) columns (e.g. CustomerID, name, email, phone, address, etc.) are anonymized using SHA256 hashing before any reporting or analytics. This ensures GDPR compliance and protects customer privacy. No PII is ever exposed in the analytics schema.
+
+
+
+## Testing & Code Quality
+
+- Includes unit tests for all transformation logic (`transformers.py`)
+- Logging and error handling implemented in all ETL steps for traceability
+- Easily extendable to handle new PII columns or evolving schema
+
 
 ## Notes
 
