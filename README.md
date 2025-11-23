@@ -74,12 +74,25 @@ docker-compose exec airflow-webserver airflow users create \
 - Open Metabase at `http://localhost:3000` and configure your admin account on first run
 - Connect Metabase to the `analytics` schema to view dashboards
 
-## Example Dashboards
+## 📊 Example Dashboards
 
-- Churn by Contract Type (`images/churn_by_contracttype.PNG`)
-- Average Monthly Charges for Churners by Contract Type (`images/avg_monthlycharges_by_contracttype.PNG`)
-- Churn by Customer Tenure (`images/churn_by_tenure.PNG`)
+### 1. Churn by Contract Type
 
+![Churn by Contract Type](images/churn_by_contracttype.PNG)
+
+---
+
+### 2. Average Monthly Charges for Churners by Contract Type
+
+![Average Monthly Charges for Churners by Contract Type](images/avg_monthlycharges_by_contracttype.PNG)
+
+---
+
+### 3. Churn by Customer Tenure – Number of Churners per Tenure Group
+
+![Churn by Tenure](images/churn_by_tenure.PNG)
+
+---
 ## Project Structure
 
 ```
