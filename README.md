@@ -2,20 +2,6 @@
 
 ## Overview
 
-This project creates an automated ELT (Extract, Load, Transform) pipeline to analyze Telecom Customer Churn.  
-It ingests data from Kaggle, stores raw data in a staging area, anonymizes Personal Identifiable Information (PII), and creates a clean dataset ready for reporting.
-
----
-
-## Architecture
-
-The solution is fully containerized using Docker.
-
-- **Extraction :** Python script using Kaggle API.
-# Telecom Churn ELT Pipeline
-
-## Overview
-
 This project implements an automated ELT (Extract, Load, Transform) pipeline for Telecom Customer Churn analysis. The pipeline:
 
 - Downloads raw data (Kaggle)
@@ -29,7 +15,7 @@ The solution is containerized with Docker and uses:
 
 - **Extraction:** Python script using the Kaggle API
 - **Orchestration:** Apache Airflow (DAG scheduled as configured)
-- **Database:** PostgreSQL ( `staging` and `analytics` schemas )
+- **Database:** PostgreSQL (`staging` and `analytics` schemas)
 - **Transformation:** Pandas & SQLAlchemy
 - **Reporting:** Metabase connected to the `analytics` schema
 
@@ -69,7 +55,7 @@ In a new terminal:
 ```
 docker-compose exec airflow-webserver airflow db init
 docker-compose exec airflow-webserver airflow users create \
-	--username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin
+  --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin
 ```
 
 5) Trigger the pipeline
@@ -121,10 +107,5 @@ If you add images for the README, place them in the `images/` folder or update t
 ---
 
 Ready to use for Telecom churn analysis!
----
-
-
-
-## Project Structure
 
 
