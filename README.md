@@ -95,19 +95,19 @@ docker-compose exec airflow-webserver airflow users create
 
 ### 1. Churn by Contract Type
 
-![Churn by Contract Type](images/churn_by_contracttype.png)
+![Churn by Contract Type](images/churn_by_contracttype.PNG)
 
 ---
 
 ### 2. Average Monthly Charges for Churners by Contract Type
 
-![Average Monthly Charges for Churners by Contract Type](images/avg_monthlycharges_by_contracttype.png)
+![Average Monthly Charges for Churners by Contract Type](images/avg_monthlycharges_by_contracttype.PNG)
 
 ---
 
 ### 3. Churn by Customer Tenure – Number of Churners per Tenure Group
 
-![Churn by Tenure](images/churn_by_tenure.png)
+![Churn by Tenure](images/churn_by_tenure.PNG)
 
 ---
 
