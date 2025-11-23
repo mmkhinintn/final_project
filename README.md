@@ -113,6 +113,7 @@ docker-compose exec airflow-webserver airflow users create
 
 ## Project Structure
 
+
 telecom-churn-pipeline/
 │
 ├── dags/
@@ -126,8 +127,7 @@ telecom-churn-pipeline/
 ├── requirements.txt
 └── images/ # Dashboard screenshots for README
 
-
----
+undefined
 
 ## Notes
 
