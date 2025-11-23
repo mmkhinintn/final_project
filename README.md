@@ -4,10 +4,9 @@
 
 This project implements an automated ELT (Extract, Load, Transform) pipeline for Telecom Customer Churn analysis. The pipeline:
 
-- Downloads raw data (Kaggle)
-- Loads raw data into a staging area
-- Anonymizes PII and transforms the data
-- Stores cleaned data in an `analytics` schema for reporting
+- Downloads data from Kaggle
+- Applies imputation and PII anonymization (hashing of CustomerID and any PII columns)
+- Loads clean data directly into the `customer_churn` table for reporting and analytics
 
 
 ## Architecture
