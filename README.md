@@ -61,6 +61,7 @@ docker-compose up --build
 
 In a new terminal:
 
+---
 docker-compose exec airflow-webserver airflow db init
 docker-compose exec airflow-webserver airflow users create
 --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin
@@ -72,7 +73,8 @@ docker-compose exec airflow-webserver airflow users create
 
 - Go to [http://localhost:8080](http://localhost:8080)
 - Login with `admin/admin`
-- Trigger the `churn_pipeline` DAG or wait for the hourly scheduler
+- Trigger the `etl_churn` DAG or wait for the hourly scheduler, you can view this via :![ETL_Churn](images/etl_churn.PNG)
+
 
 ---
 
