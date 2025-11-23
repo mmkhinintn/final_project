@@ -126,7 +126,6 @@ telecom-churn-pipeline/
 ├── requirements.txt
 └── images/ # Dashboard screenshots for README
 
-text
 
 ---
 
