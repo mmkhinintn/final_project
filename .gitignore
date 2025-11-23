@@ -1,9 +1,60 @@
-.env
-data/
-__pycache__/
-.venv/
+# Python
 *.pyc
-.DS_Store
-postgres_data/
+__pycache__/
+*.pyo
+*.pyd
+
+# Airflow
+airflow.db
 logs/
-plugins/
+*.log
+
+# Data & outputs
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/*.json
+data/*.txt
+data/*.zip
+
+# Ignore your .env files
+.env
+.env.*
+
+# Example keep
+!.env.example
+
+# Docker
+*.pid
+*.db
+*.tar
+*.sock
+
+# VSCode & editors
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+*.ipynb_checkpoints
+.ipynb_checkpoints/
+
+# Tests
+.cache/
+pytest_cache/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.old
+
+# Ignore Metabase and BI temp/screenshots
+images/*.tmp
+images/*.bak
+
+# Git itself
+.git/
