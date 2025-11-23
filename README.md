@@ -84,8 +84,8 @@ docker-compose exec airflow-webserver airflow users create \
 6) Metabase (reporting)
 
 - Open Metabase at `http://localhost:3000` and configure your admin account on first run
-- Connect Metabase to the `analytics` schema to view dashboards
-- you can finally see the data via 
+- Connect Metabase to the churn_db database and select the customer_churn table to view dashboards
+- You can visualize the data as shown below:
 ![churn_customers](images/churn_customers.PNG)
 
 ## 📊 Example Dashboards
