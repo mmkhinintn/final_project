@@ -75,7 +75,9 @@ docker-compose exec airflow-webserver airflow users create \
 - Login with `admin` / `admin`
 - Trigger the `etl_churn` DAG or wait for the scheduler
 - We obtain a result like this:
+
 ![etl_churn](images/etl_churn.PNG)
+
 
 6) Verify results
 
