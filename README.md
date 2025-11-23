@@ -120,6 +120,5 @@ final_project/ (project root)
 
 **Ready to use for any Telecom churn analysis!**
 
-Ready to use for Telecom churn analysis!
 
 
