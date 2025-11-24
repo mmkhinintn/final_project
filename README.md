@@ -16,7 +16,7 @@ The solution is containerized with Docker and uses:
 - **Extraction:** Python script using the Kaggle API
 - **Orchestration:** Apache Airflow (DAG scheduled as configured)
 - **Transformation:** Pandas & SQLAlchemy
-- **Reporting:** Metabase connected to the `analytics` schema
+- **Reporting:** Metabase connected to the `customer_churn`
 
 ## Architecture Diagram
 
