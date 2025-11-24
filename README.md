@@ -33,8 +33,8 @@ The solution is containerized with Docker and uses:
 1) Clone the project
 
 ```
-git clone https://github.com/mmkhininitn/telecom-churn-pipeline.git
-cd telecom-churn-pipeline
+git clone https://github.com/mmkhininitn/final_project.git
+cd final_project
 ```
 
 2) Configure credentials
