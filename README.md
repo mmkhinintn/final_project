@@ -15,7 +15,6 @@ The solution is containerized with Docker and uses:
 
 - **Extraction:** Python script using the Kaggle API
 - **Orchestration:** Apache Airflow (DAG scheduled as configured)
-- **Database:** PostgreSQL (`staging` and `analytics` schemas)
 - **Transformation:** Pandas & SQLAlchemy
 - **Reporting:** Metabase connected to the `analytics` schema
 
@@ -34,7 +33,7 @@ The solution is containerized with Docker and uses:
 1) Clone the project
 
 ```
-git clone https://github.com/yourusername/telecom-churn-pipeline.git
+git clone https://github.com/mmkhininitn/telecom-churn-pipeline.git
 cd telecom-churn-pipeline
 ```
 
